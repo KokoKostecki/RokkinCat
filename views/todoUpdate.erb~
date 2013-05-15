@@ -1,0 +1,5 @@
+<form action="/update" method="post">
+  Task Number: <input type="text" name="number">
+  <input type="submit">
+</form>
+<hr>

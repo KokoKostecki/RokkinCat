@@ -1,0 +1,5 @@
+Input:
+<form action="/form" method="post>
+  <input type="text" name="message" value="butts">
+  <input type="submit">
+</form>

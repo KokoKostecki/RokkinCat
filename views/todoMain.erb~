@@ -1,0 +1,22 @@
+<form action="/" method="post">
+  <input type="submit" name="add" value="Add Task">
+  <input type="submit" name="clear" value="Clear Task">
+  <input type="submit" name="update" value="Update Task">
+</form>
+
+<br>
+<hr>
+<br>
+
+<ol>
+  <% CSV.foreach("list.csv") do |row| %>
+    <li>
+    <% if row[2].strip == "on" %>
+      <del><%= row[1] %></del>
+      <br>
+    <% else %>
+      <%= row[1] %>
+    <% end %>
+    </li>
+  <% end %>
+</ol>
